@@ -9,12 +9,13 @@ setting.py
 LANGUAGE_CODE = 'zh-hant'
 TIME_ZONE = 'Asia/Taipei'
 
-cmd
-python manage.py startapp polls
-python manage.py makemigrations polls 建立Models裡面的資料庫
-python manage.py sqlmigrate polls 0001
-python manage.py migrate
-python manage.py shell
-python manage.py createsuperuser
+cmd 
+python manage.py runserver  
+python manage.py startapp polls  
+python manage.py makemigrations polls 建立Models裡面的資料庫  
+python manage.py sqlmigrate polls 0001  
+python manage.py migrate  
+python manage.py shell  
+python manage.py createsuperuser  
 
 
