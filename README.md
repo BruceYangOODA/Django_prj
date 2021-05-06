@@ -15,7 +15,7 @@ python manage.py startapp polls
 python manage.py makemigrations polls 建立Models裡面的資料庫  
 python manage.py sqlmigrate polls 0001  
 python manage.py migrate  
-python manage.py shell  
+python manage.py shell  開啟資料庫管理CMD  
 python manage.py createsuperuser  
 
 
