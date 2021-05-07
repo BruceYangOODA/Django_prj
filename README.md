@@ -28,7 +28,7 @@ python manage.py createsuperuser
 % cd 網站資料夾  
 % python manage.py migrate  #創建數據庫  
 % python manage.py runserver  
-# http://127.0.0.1:8000/  ＃預設網址  
+<a>http://127.0.0.1:8000/  ＃預設網址  
 
 
 
