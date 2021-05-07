@@ -1,7 +1,6 @@
 # Django_prj
 
 [Django DOCS](https://docs.djangoproject.com/en/3.2/)  
-[Youtube Python Django Tutorial 2018 for Beginners](https://www.youtube.com/playlist?list=PL-J2q3Ga50oOpni_xS2PPUe4mf9lM96dD)  
 [Youtube Python Django Tutorial 2020 - Full Course for Beginners](https://www.youtube.com/watch?v=JT80XhYJdBw)  
 語系設定
 setting.py
@@ -39,7 +38,7 @@ $ python manage.py startapp polls
   path()有四個參數, 第一參數 route, 第二參數 view, 第四參數 name(以name直接指定網址)  
 03.  建立網頁用資料庫  
   修改polls/models.py  建立資料庫欄位  
-  修改testsite/settings.py INSTALLED_APPS 新增 'polls.apps.PollsConfig',
+  修改testsite/settings.py INSTALLED_APPS 新增 'polls.apps.PollsConfig',  
 $ python manage.py test  自動檢測資料庫欄位設定  
 $ python manage.py makemigrations polls  創建資料庫  
   django會自動建立 migrations資料夾, 並登記資料庫變更紀錄  
@@ -47,4 +46,6 @@ $ python manage.py migrate  承認變更交易
 $ python manage.py shell  進入資料庫 cmd  
   新增資料庫資料  
   modelClass.objects.filter(條件)  查詢操作,取得ClassSet  
-  modelClass.objects.get(條件)  查詢操作，只取第一個    
+  modelClass.objects.get(條件)  查詢操作，只取第一個  
+  pk=1 ; primaryKey = 1  
+$ msg = Message(msg='Hellow!', sender=usr)
