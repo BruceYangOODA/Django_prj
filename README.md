@@ -20,7 +20,7 @@ python manage.py createsuperuser
 
 
 01. 安裝Django套件  
-% conda create -n django  
+% conda create --name django  
 % activate django  
 % cd prj資料夾  
 % conda install django  #安裝django預設模組  
@@ -28,7 +28,9 @@ python manage.py createsuperuser
 % cd 網站資料夾  
 % python manage.py migrate  #創建數據庫  
 % python manage.py runserver  
-<a>http://127.0.0.1:8000/  ＃預設網址  
-
-
-
+  127.0.0.1:8000/  ＃預設網址  
+  修改語系 testsite/testsite/settings.py  
+  LANGUAGE_CODE = 'zh-hant'
+  TIME_ZONE = 'Asia/Taipei'
+02.  建立網頁code資料夾  
+% python manage.py startapp polls  
