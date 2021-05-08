@@ -44,11 +44,24 @@ $ python manage.py makemigrations polls  創建資料庫
   django會自動建立 migrations資料夾, 並登記資料庫變更紀錄  
 $ python manage.py migrate  承認變更交易  
 $ python manage.py shell  進入資料庫 cmd  
-cmd
-% from pools.models import User, Message
+cmd  
+% from pools.models import User, Message  
   新增資料庫資料  
   modelClass.objects.filter(條件)  查詢操作,取得ClassSet  
   modelClass.objects.get(條件)  查詢操作，只取第一個  
   pk=1 ; primaryKey = 1  
-% msg = Message(msg='Hellow!', sender=usr)  
 % usr = User.objects.get(pk=1)  
+% msg = Message(msg='Hellow!', sender=usr)  
+% msg = usr.message_set.create(msg='what?')  
+  因為是 ForeinKey,可以這樣寫  
+04. 建立網站管理帳號  
+$ python manage.py createsuperuser  
+  127.0.0.1:8000/admin  
+  在polls/admin.py匯入資料庫資料  
+  from .models import User, Message  
+  admin.site.register(User)  
+  admin.site.register(Message)  
+05. 建立網頁首頁  
+  在polls/urls.py 用path()註冊網頁網址與對應的view  
+  建立網頁畫面 polls/templates/polls/index.html  
+  polls/views.py return render(request, 網址, 資料字典)  
