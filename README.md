@@ -45,10 +45,10 @@ $ python manage.py makemigrations polls  創建資料庫
 $ python manage.py migrate  承認變更交易  
 $ python manage.py shell  進入資料庫 cmd  
 cmd
-> from pools.models import User, Message
+% from pools.models import User, Message
   新增資料庫資料  
   modelClass.objects.filter(條件)  查詢操作,取得ClassSet  
   modelClass.objects.get(條件)  查詢操作，只取第一個  
   pk=1 ; primaryKey = 1  
-> msg = Message(msg='Hellow!', sender=usr)  
-> usr = User.objects.get(pk=1)  
+% msg = Message(msg='Hellow!', sender=usr)  
+% usr = User.objects.get(pk=1)  
