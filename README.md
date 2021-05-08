@@ -44,8 +44,11 @@ $ python manage.py makemigrations polls  創建資料庫
   django會自動建立 migrations資料夾, 並登記資料庫變更紀錄  
 $ python manage.py migrate  承認變更交易  
 $ python manage.py shell  進入資料庫 cmd  
+cmd
+> from pools.models import User, Message
   新增資料庫資料  
   modelClass.objects.filter(條件)  查詢操作,取得ClassSet  
   modelClass.objects.get(條件)  查詢操作，只取第一個  
   pk=1 ; primaryKey = 1  
-$ msg = Message(msg='Hellow!', sender=usr)
+> msg = Message(msg='Hellow!', sender=usr)  
+> usr = User.objects.get(pk=1)  
