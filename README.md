@@ -65,3 +65,6 @@ $ python manage.py createsuperuser
   在polls/urls.py 用path()註冊網頁網址與對應的view  
   建立網頁畫面 polls/templates/polls/index.html  
   polls/views.py return render(request, 網址, 資料字典)  
+  表單驗證添加 {% csrf_token %}  
+  from django.views import generic  網頁畫面界接器  
+06. CSS 和 JS  
