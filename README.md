@@ -68,3 +68,5 @@ $ python manage.py createsuperuser
   表單驗證添加 {% csrf_token %}  
   from django.views import generic  網頁畫面界接器  
 06. CSS 和 JS  
+  在html檔加 {% load static %} 導入CSS設定  
+  <link rel="stilesheet" type="text/css" href="{% static 'polls/style.css' %}"/>  
