@@ -2,6 +2,9 @@
 
 [Django DOCS](https://docs.djangoproject.com/en/3.2/)  
 [Youtube Python Django Tutorial 2020 - Full Course for Beginners](https://www.youtube.com/watch?v=JT80XhYJdBw)  
+[django tutorial code web1](https://github.com/CleverProgrammer/codedaddies_list)  
+[django tutorial code web2](https://replit.com/@NazariyDumansk1/To-Do-App)  
+
 語系設定
 setting.py
 LANGUAGE_CODE = 'zh-hant'
